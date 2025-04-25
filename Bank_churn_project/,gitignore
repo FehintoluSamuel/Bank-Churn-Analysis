@@ -1,0 +1,35 @@
+# Python Bytecode
+*.pyc
+*.pyo
+__pycache__/
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
+
+# Environment Files
+.env
+*.env
+*.venv/
+venv/
+__pycache__/
+
+# Virtual Environment
+/.venv/
+/env/
+
+# Streamlit Configuration
+/.streamlit/
+
+# IDE Settings (e.g., VS Code)
+.vscode/
+
+# Python dependency files (use requirements.txt instead)
+Pipfile
+Pipfile.lock
+
+# Data files (if your dataset is large or sensitive)
+data/
+
+# Backup files
+*.bak
+*.swp
