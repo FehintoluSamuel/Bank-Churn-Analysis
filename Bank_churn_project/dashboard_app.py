@@ -11,11 +11,20 @@ st.set_page_config(layout="wide")
 # Now you can start your app
 st.title('📊 Bank Churn Full Dashboard')
 
+# Try loading the data
+csv_path = 'data_folder/cleaned_bank_churn_analysis.csv'
 
 st.title("Upload CSV file")
 uploaded_file = st.file_uploader("Choose a CSV file", type=["csv"])
 if uploaded_file is not None:
-    df = pd.read_csv(uploaded_file)
+    try:
+        df = pd.read_csv(uploaded_file)
+    except FileNotFoundError:
+        st.error(f"❗ CSV file not found at path: `{csv_path}`")
+        st.stop()
+    except Exception as e:
+        st.error(f"❗ Unexpected error loading CSV: {e}")
+        st.stop()
 # ------------------- SECTION 1: Demographics -------------------
 st.header('🌍 Gender & Country Distribution of Customers')
 demographics_gender = df.groupby(['Geography', 'Gender']).size().reset_index(name='Number of Customers')
