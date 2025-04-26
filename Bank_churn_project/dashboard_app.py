@@ -8,7 +8,7 @@ st.set_page_config(layout='wide')
 st.title('📊 Bank Churn Full Dashboard')
 # Load cleaned data
 # Load cleaned data
-csv_path = r'FehintoluSamuel/Bank-Churn-Analysis/Bank_churn_project/cleaned_bank_churn_analysis.csv'
+csv_path = 'data_folder/cleaned_bank_churn_analysis.csv'
 df = pd.read_csv(csv_path)
 #st.title("Upload CSV file")
 #uploaded_file = st.file_uploader("Choose a CSV file", type=["csv"])
