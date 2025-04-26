@@ -7,8 +7,10 @@ from sklearn.ensemble import RandomForestClassifier
 st.set_page_config(layout='wide')
 st.title('📊 Bank Churn Full Dashboard')
 # Load cleaned data
-csv_path = 'cleaned_bank_churn_analysis.csv'
-df = pd.read_csv(csv_path)
+st.title("Upload CSV file")
+uploaded_file = st.file_uploader("Choose a CSV file", type=["csv"])
+if uploaded_file is not None:
+    df = pd.read_csv(uploaded_file)
 # ------------------- SECTION 1: Demographics -------------------
 st.header('🌍 Gender & Country Distribution of Customers')
 demographics_gender = df.groupby(['Geography', 'Gender']).size().reset_index(name='Number of Customers')
