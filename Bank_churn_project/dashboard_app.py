@@ -3,6 +3,15 @@ import pandas as pd
 import plotly.express as px
 from sklearn.preprocessing import LabelEncoder, StandardScaler
 from sklearn.ensemble import RandomForestClassifier
+import os
+
+csv_path = 'data_folder/cleaned_bank_churn_analysis.csv'
+# Check if file exists
+if os.path.exists(csv_path):
+    df = pd.read_csv(csv_path)
+else:
+    st.error(f"CSV file not found at {csv_path}")
+
 # Set wide layout for screenshot friendliness
 st.set_page_config(layout='wide')
 st.title('📊 Bank Churn Full Dashboard')
