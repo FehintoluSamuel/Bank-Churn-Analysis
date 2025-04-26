@@ -27,7 +27,7 @@ This project analyzes customer churn for a banking institution. Using a dataset 
   - Churn patterns and risk segmentation.
 
 - **Dashboard Application:**  
-  A user-friendly Streamlit dashboard to interactively explore insights and monitor churn risk indicators(Bank-Churn-Analysis).
+  A user-friendly Streamlit dashboard to interactively explore insights and monitor churn risk indicators.
   ![Dashboard Overview](/Bank_churn_project/Dashboard_jpeg.jpg)
 
 - **Prediction and Customer Classification:**  
