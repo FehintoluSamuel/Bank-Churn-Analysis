@@ -5,19 +5,21 @@ from sklearn.preprocessing import LabelEncoder, StandardScaler
 from sklearn.ensemble import RandomForestClassifier
 import os
 
+# 🚨 FIRST Streamlit command
+st.set_page_config(layout="wide")
+
+# Now you can start your app
+st.title('📊 Bank Churn Full Dashboard')
+
+# Load your CSV
 csv_path = 'data_folder/cleaned_bank_churn_analysis.csv'
-# Check if file exists
+
 if os.path.exists(csv_path):
     df = pd.read_csv(csv_path)
 else:
     st.error(f"CSV file not found at {csv_path}")
 
-# Set wide layout for screenshot friendliness
-st.set_page_config(layout='wide')
-st.title('📊 Bank Churn Full Dashboard')
-# Load cleaned data
-csv_path = 'cleaned_bank_churn_analysis.csv'
-df = pd.read_csv(csv_path)
+
 #st.title("Upload CSV file")
 #uploaded_file = st.file_uploader("Choose a CSV file", type=["csv"])
 #if uploaded_file is not None:
