@@ -7,8 +7,7 @@ from sklearn.ensemble import RandomForestClassifier
 st.set_page_config(layout='wide')
 st.title('📊 Bank Churn Full Dashboard')
 # Load cleaned data
-# Load cleaned data
-csv_path = 'data_folder/cleaned_bank_churn_analysis.csv'
+csv_path = 'cleaned_bank_churn_analysis.csv'
 df = pd.read_csv(csv_path)
 #st.title("Upload CSV file")
 #uploaded_file = st.file_uploader("Choose a CSV file", type=["csv"])
