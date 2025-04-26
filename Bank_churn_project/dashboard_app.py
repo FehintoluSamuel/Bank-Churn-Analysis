@@ -7,7 +7,7 @@ from sklearn.ensemble import RandomForestClassifier
 st.set_page_config(layout='wide')
 st.title('📊 Bank Churn Full Dashboard')
 # Load cleaned data
-csv_path = csv_path = r'C:\Users\fehin\schlscrape_project\\Bank_churn_project\data_folder\cleaned_bank_churn_analysis.csv'
+csv_path = csv_path = r'csv_path = './data_folder/cleaned_bank_churn_analysis.csv'
 df = pd.read_csv(csv_path)
 # ------------------- SECTION 1: Demographics -------------------
 st.header('🌍 Gender & Country Distribution of Customers')
