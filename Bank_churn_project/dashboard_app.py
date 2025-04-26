@@ -1,9 +1,3 @@
-import streamlit as st
-import pandas as pd
-import plotly.express as px
-from sklearn.preprocessing import LabelEncoder, StandardScaler
-from sklearn.ensemble import RandomForestClassifier
-
 # Set wide layout for screenshot friendliness
 st.set_page_config(layout='wide')
 st.title('📊 Bank Churn Full Dashboard')
