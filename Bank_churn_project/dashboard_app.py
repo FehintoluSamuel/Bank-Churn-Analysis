@@ -12,7 +12,7 @@ st.set_page_config(layout="wide")
 st.title('📊 Bank Churn Full Dashboard')
 
 # Try loading the data
-csv_path = 'cleaned_bank_churn_analysis.csv'
+csv_path = r'./cleaned_bank_churn_analysis.csv'
 df = pd.read_csv(uploaded_file)
 
 #st.title("Upload CSV file")
