@@ -13,6 +13,7 @@ st.title('📊 Bank Churn Full Dashboard')
 
 # Try loading the data
 csv_path = 'cleaned_bank_churn_analysis.csv'
+df = pd.read_csv(uploaded_file)
 
 """st.title("Upload CSV file")
 uploaded_file = st.file_uploader("Choose a CSV file", type=["csv"])
