@@ -37,12 +37,7 @@ This project analyzes customer churn for a banking institution. Using a dataset 
 
 ## 🚀 Live Dashboard
 
-> **[Click here to view the live Streamlit app](https://bank-churn-analysis-hwbyakgnf6pdz4jm5nrfr6.streamlit.app/)**  
-
-**Important:**  
-To use the dashboard:
-- Download the file `cleaned_bank_churn_analysis.csv` from this repository.
-- When the dashboard prompts you to upload a file, upload the downloaded CSV file.
+> **[Click here to view the live Streamlit app](https://bank-churn-analysis-l2ekffyex35m4jxwkfevv3.streamlit.app/)**  
 
 If you haven't deployed the app yet, you can still run it locally by following the instructions below.
 
