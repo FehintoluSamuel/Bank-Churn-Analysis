@@ -12,8 +12,14 @@ st.set_page_config(layout="wide")
 st.title('📊 Bank Churn Full Dashboard')
 
 # Try loading the data
-#csv_path = r'./cleaned_bank_churn_analysis.csv'
-df = pd.read_csv(r'./cleaned_bank_churn_analysis.csv')
+csv_path = r'cleaned_bank_churn_analysis.csv'
+df = pd.read_csv(csv_path)
+if os.path.exists(csv_path):
+    df = pd.read_csv(csv_path)
+    st.success('✅ CSV loaded successfully!')
+else:
+    st.error(f"❌ Could not find the file at: `{csv_path}`. Please check the file location.")
+    st.stop()
 
 #st.title("Upload CSV file")
 #uploaded_file = st.file_uploader("Choose a CSV file", type=["csv"])
